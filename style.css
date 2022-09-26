@@ -1,0 +1,126 @@
+/* DEFINIÇÃO DAS CONSTANTES */
+:root {
+    --roxo-claro: #A11BFA;
+    --roxo-escuro: #5E17EB;
+    --verde-claro: #03FA6E;
+    --verde-escuro: #008037;
+    font-family: 'Montserrat';font-size: 25px;
+}
+
+/* FONTE */
+body {
+    font-family: 'Montserrat';font-size: 25px;
+}
+
+/* BOOTSTRAP */
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+/* CABEÇALHO */
+header {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-link {
+    color: white;
+    font-family: 'Montserrat';font-size: 25px;
+    font-weight: 1000;
+}
+
+a:hover {
+    color: var(--verde-claro);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--roxo-claro);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* APRESENTAÇÃO */
+
+.introShape{
+    position:absolute;
+    width:100%;
+    display:flex;
+    height: 870px;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    overflow:hidden;
+    z-index: 998;
+  }
+  .introShape:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: #000;
+    border-radius:0 0 100% 100%/0 0 40% 40%;
+    transform:scaleX(1.5);
+    z-index: 998;
+  }
+  .introShapeHeading{
+    font-size:40px;
+    font-weight:500;
+    margin:5px;
+    z-index:1;
+    width:100%;
+    color:#f5f6fa;
+    text-align:center;
+    z-index: 998;
+  }
+  .introShapeTagline{
+    z-index:1;
+    font-size: 15px;
+    font-weight: 200;
+    width: 100%;
+    color:#f5f6fa;
+    text-align:center;
+    z-index: 998;
+  }
+
+  .introShapeTeste{
+    position:relative;
+    width:100%;
+    display:flex;
+    height: 880px;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    overflow:hidden;
+    z-index: 997;
+  }
+  .introShapeTeste:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: var(--verde-claro);
+    border-radius:0 0 100% 100%/0 0 40% 40%;
+    transform:scaleX(1.5);
+    z-index: 997;
+  }
+
+/* INTRO EXPANDIDA */
+.introducaoExpandida {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    z-index: 998;
+}
+
+.ilustracoesDireita {
+    position: left;
+}
