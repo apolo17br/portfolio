@@ -12,6 +12,13 @@ body {
     font-family: 'Montserrat';font-size: 25px;
 }
 
+.titulos {
+    font-size: 130px;
+    font-weight: 1000;
+    letter-spacing: 30px;
+    text-align: center;
+}
+
 /* BOOTSTRAP */
 .selector-for-some-widget {
     box-sizing: content-box;
@@ -116,11 +123,38 @@ a:active {
 
 /* INTRO EXPANDIDA */
 .introducaoExpandida {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 15%;
+    margin-bottom: 10%;
     z-index: 998;
+}
+
+#textoCentralIntroducao {
+    font-size: 40px;
 }
 
 .ilustracoesDireita {
     position: left;
+}
+
+/* SOLUCOES */
+.solucoes{
+    margin-bottom: 15%;
+}
+
+.textoLateralEsquerdo {
+    font-size: 100px;
+    font-weight: 1000;
+    letter-spacing: 30px;
+    text-align: left;
+    writing-mode: vertical-lr; 
+    transform: rotate(180deg);
+}
+
+.textoCentral {
+    margin-top: 10%;
+    text-align: left;
+}
+
+#tituloSolucoes{
+    margin-bottom: 10%;
 }
