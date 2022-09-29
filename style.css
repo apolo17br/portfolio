@@ -4,7 +4,8 @@
     --roxo-escuro: #5E17EB;
     --verde-claro: #03FA6E;
     --verde-escuro: #008037;
-    font-family: 'Montserrat';font-size: 25px;
+    font-family: 'Montserrat';
+    font-size: 25px;
 
     --white: #fff;
     --black: #1c2b2d;
@@ -16,14 +17,17 @@
 }
 
 .background {
-    background: url("./source/BACKGROUND.svg") no-repeat;
+    background: url("./source/BACKGROUND.svg");
+    background-repeat: no-repeat;
     background-size: cover;
-
- }
+    background-color: (--verde-claro);
+    min-height: 50%;
+}
 
 /* FONTE */
 body {
-    font-family: 'Montserrat';font-size: 25px;
+    font-family: 'Montserrat';
+    font-size: 25px;
 }
 
 .titulos {
@@ -51,7 +55,8 @@ header {
 
 .nav-link {
     color: white;
-    font-family: 'Montserrat';font-size: 25px;
+    font-family: 'Montserrat';
+    font-size: 25px;
     font-weight: 1000;
 }
 
@@ -71,10 +76,14 @@ a:active {
 
 .introducao {
     text-align: center;
+    margin-top: 15vw;
+
+    height: 36px;
+    margin: 15% auto;
+    min-width: 100%;
 }
 
 .introducaoTexto {
-    margin-top: 10vw;
     color: white;
     text-align: center;
     font-size: 40px;
@@ -82,22 +91,45 @@ a:active {
 
 /* INTRO EXPANDIDA */
 .introducaoExpandida {
-    margin-top: 35vw;
+    resize: none;
+    max-height: 30%;
+    max-width: 100%;
+
+    height: 40%;
+    margin: 40% auto;
+    margin-top: 60%;
+    min-width: 100%;
 }
 
-#textoCentralIntroducao {
-    font-size: 4vw;
+@media screen and (min-width: 601px) {
+    #textoCentralIntroducao {
+        font-size: 70px;
+        max-height: 20%;
+        max-width: 100%;
+        resize: horizontal;
+    }
 }
+
+@media screen and (max-width: 600px) {
+    #textoCentralIntroducao {
+        font-size: 40px;
+        height: 4vh;
+        max-width: 10%;
+    }
+}
+
 
 /* SOLUCOES */
 
-#tituloSolucoes{
-    margin-top: 35vw;
-    margin-bottom: 5vw;
+#tituloSolucoes {
+    margin-top: 20vw;
+    margin-bottom: 15vw;
+    height: 30px;
+    min-width: 100%;
 }
 
-.solucoes{
-    margin-bottom: 5vw;
+.solucoes {
+    margin-bottom: 10vw;
 }
 
 .textoEsquerdaSolucoes {
@@ -108,6 +140,7 @@ a:active {
     max-height: 613px;
     line-height: 70px;
     font-size: 58px;
+    
 }
 
 .textoDireitaSolucoes {
@@ -127,7 +160,7 @@ a:active {
 
 /* PORTFOLIO */
 
-#tituloPortfolio{
+#tituloPortfolio {
     margin-top: 30vw;
     color: white;
     margin-bottom: 5vw;
@@ -147,6 +180,12 @@ a:active {
     border-radius: 15px;
     max-width: 350px;
     background-color: white;
+}
+
+.portfolio-image {
+    padding: 5%;
+    max-width: 260;
+    border-image: url(./source/vendasCACC.png) 30 round;
 }
 
 .portfolio-item-details {
@@ -185,8 +224,13 @@ a:active {
 
 /* CONTATO */
 
-#tituloContato{
-    margin-top: 20vw;
+.contato {
+    margin-top: 10vw;
+    margin-bottom: 40vw;
+}
+
+#tituloContato {
+    margin-top: 30vw;
     color: black;
     font-weight: 900;
     margin-bottom: 5vw;
